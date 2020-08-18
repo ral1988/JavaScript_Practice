@@ -1,9 +1,6 @@
 //anonymous functions
 
-var a = 241/4;
-var b = 44/4;
-
-var theBiggest = function() { //this is the anonymous function placed into a var
+var theBiggest = function(a, b) { //this is the anonymous function placed into a var
     var result;
     a > b ? result = ["a", a] : result = ["b", b];
 
@@ -14,4 +11,4 @@ var theBiggest = function() { //this is the anonymous function placed into a var
 
 //theBiggest();
 
-console.log(theBiggest());
+console.log(theBiggest(1/4, 1/3));
