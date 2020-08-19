@@ -9,3 +9,6 @@ var captionText = document.createTextNode(altText);
 
 captionElement.appendChild(captionText);
 
+FEATURED.appendChild(captionElement);
+
+THEIMAGE.setAttribute("alt",""); // second element is blank to not repeat information for screen readers
