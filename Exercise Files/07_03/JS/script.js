@@ -7,11 +7,12 @@ ALERT.classList.add("hide");
 function reveal(e) {
 
     e.preventDefault();
-    CTA.classList.toogle("hide");
-    ALERT.classList.toogle("hide");
+    CTA.classList.toggle("hide");
+    ALERT.classList.toggle("hide");
 
 }
 
 CTA.onclick = reveal;
 CTA.onclick = console.log("The button was clicked");
 
+CTA.addEventListener("click", reveal, false);
