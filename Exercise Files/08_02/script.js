@@ -56,6 +56,22 @@ function start() {
 
 // Reset everything:
 function reset() {
+    //reset the interval timer
+    clearInterval(interval);
+
+    //helps to avoid wasting resources in the browser by making it null
+    interval = null; 
+
+    //set time array back to zero
+    timer = [0, 0, 0, 0];
+
+    timerRunning = false;
+
+    //rest the test area
+    testArea.value = "";
+    theTimer.innerHTML = "00:00:00";
+    testWrapper.style.borderColor = "grey";
+
     console.log("Reset button has been pressed!");
 }
 
